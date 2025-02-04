@@ -247,3 +247,7 @@ nav {
         color: #4682b4; /* Steel blue */
     }
 }
+
+<link rel="stylesheet" href="styles/styles.css">
+<script src="scripts/app.js"></script>
+<script src="scripts/home.js"></script>

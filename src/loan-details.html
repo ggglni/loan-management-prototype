@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Details</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Loan Details</h1>
+        <nav>
+            <div class="hamburger-menu" id="hamburger-menu">
+                &#9776;
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="list-of-bnpl.html">List of BNPL</a></li>
+                <li><a href="payment-options.html">Payment Options</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="loan-info">
+            <p><strong>Origination Date:</strong> <span id="origination-date"></span></p>
+            <p><strong>Merchant:</strong> <span id="merchant"></span></p>
+            <p><strong>Amount:</strong> <span id="amount"></span></p>
+            <p><strong>Status:</strong> <span id="status" class="status"></span></p>
+            <p><strong>Terms:</strong> <span id="terms"></span></p>
+        </section>
+        <section id="instalments">
+            <h2>Instalments</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Instalment Number</th>
+                        <th>Amount</th>
+                        <th>Due Date</th>
+                        <th>Instalment Status</th>
+                    </tr>
+                </thead>
+                <tbody id="instalments-list">
+                    <!-- Instalments will be populated here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Loan Management Prototype</p>
+    </footer>
+    <script src="scripts/loan-details.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>

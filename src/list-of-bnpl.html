@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of BNPL</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>List of BNPL</h1>
+        <nav>
+            <div class="hamburger-menu" id="hamburger-menu">
+                &#9776;
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="payment-options.html">Payment Options</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date Origination</th>
+                    <th>Merchant</th>
+                    <th>Amount</th>
+                    <th>Terms</th>
+                    <th>Status</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2023-01-01</td>
+                    <td>Merchant A</td>
+                    <td>€1000</td>
+                    <td>5 months</td>
+                    <td><span class="status ongoing">Ongoing</span></td>
+                    <td><a href="loan-details.html?loanId=1">View Details</a></td>
+                </tr>
+                <tr>
+                    <td>2023-02-01</td>
+                    <td>Merchant B</td>
+                    <td>€2000</td>
+                    <td>5 months</td>
+                    <td><span class="status late">Late</span></td>
+                    <td><a href="loan-details.html?loanId=2">View Details</a></td>
+                </tr>
+                <tr>
+                    <td>2023-03-01</td>
+                    <td>Merchant C</td>
+                    <td>€3000</td>
+                    <td>5 months</td>
+                    <td><span class="status paid">Paid</span></td>
+                    <td><a href="loan-details.html?loanId=3">View Details</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2023 Loan Management Prototype</p>
+    </footer>
+    <script src="scripts/app.js"></script>
+</body>
+</html>

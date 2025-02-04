@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Options</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Payment Options</h1>
+        <nav>
+            <div class="hamburger-menu" id="hamburger-menu">
+                &#9776;
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="list-of-bnpl.html">List of BNPL</a></li>
+                <li><a href="payment-options.html">Payment Options</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="cards">
+            <h2>Stored Cards</h2>
+            <div class="card-list" id="card-list">
+                <div class="card">
+                    <span>Card ending in 1234</span>
+                    <span class="card-status default">Default</span>
+                    <div class="card-actions">
+                        <button>Update</button>
+                        <button class="set-default">Set as Default</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <span>Card ending in 5678</span>
+                    <span class="card-status active">Active</span>
+                    <div class="card-actions">
+                        <button>Update</button>
+                        <button class="set-default">Set as Default</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <span>Card ending in 9012</span>
+                    <span class="card-status expired">Expired</span>
+                    <div class="card-actions">
+                        <button>Update</button>
+                        <button class="set-default">Set as Default</button>
+                    </div>
+                </div>
+            </div>
+            <button id="add-card-button" class="add-card-button">Add New Card</button>
+        </section>
+        <section id="add-card-form" style="display: none;">
+            <h2>Add New Card</h2>
+            <form id="new-card-form">
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" required>
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="text" id="expiry-date" name="expiry-date" required>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+                <button type="submit">Add Card</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Loan Management Prototype</p>
+    </footer>
+    <script src="scripts/payment-options.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
